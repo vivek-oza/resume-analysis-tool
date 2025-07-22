@@ -1,4 +1,7 @@
 import parser from "@typescript-eslint/parser";
+import tseslint from "@typescript-eslint/eslint-plugin";
+import reactPlugin from "eslint-plugin-react";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
 
 export const eslintConfig = {
   languageOptions: {
@@ -11,7 +14,11 @@ export const eslintConfig = {
       },
     },
   },
-  plugins: ["@typescript-eslint", "react", "react-hooks"],
+  plugins: {
+    "@typescript-eslint": tseslint,
+    react: reactPlugin,
+    "react-hooks": reactHooksPlugin,
+  },
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
