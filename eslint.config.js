@@ -2,6 +2,11 @@ import globals from "globals";
 import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
 import pluginReactHooks from "eslint-plugin-react-hooks";
 import js from "@eslint/js";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default [
   {
@@ -17,6 +22,7 @@ export default [
         ecmaFeatures: {
           jsx: true,
         },
+        project: path.resolve(__dirname, "./tsconfig.json"),
       },
     },
     plugins: {
