@@ -1,10 +1,8 @@
 {
   "version": 2,
   "name": "resume-analysis-tool",
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "devCommand": "npm run dev",
+  "outputDirectory": "dist"
 }
