@@ -60,7 +60,7 @@ const App: React.FC = () => {
     <>
       <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl font-extrabold text-center text-gray-900 mb-8">
+          <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">
             Resume Analysis Tool
           </h1>
           <div className="grid md:grid-cols-2 gap-8">
@@ -128,22 +128,22 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
-      <footer className="bg-[#C9EBFF] backdrop-blur-sm text-[#000A16] py-14 px-4 mt-8 font-sans">
+      <footer className="bg-[#C9EBFF] backdrop-blur-sm text-[#000A16] py-14 px-4 font-sans">
         <div className="flex flex-col gap-14 font-schibsted-grotesk max-w-[1100px] mx-auto">
 
           <div className="font-medium md:text-4xl text-xl flex flex-col space-y-2">
-            <div className="">A tool made by</div>
+            <div className="">Resume analysis tool</div>
             <div className="">
-              Vivek Oza
+              
             </div>
           </div>
           <div>
-            <div className="md:text-2xl text-base">
-              Developed and managed with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0066" viewBox="0 0 256 256"><path d="M240,102c0,70-103.79,126.66-108.21,129a8,8,0,0,1-7.58,0C119.79,228.66,16,172,16,102A62.07,62.07,0,0,1,78,40c20.65,0,38.73,8.88,50,23.89C139.27,48.88,157.35,40,178,40A62.07,62.07,0,0,1,240,102Z"></path></svg> by Vivek Oza.
+            <div className="md:text-2xl text-base flex flex-row items-center space-x-2">
+              <span>Developed and managed with</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0066" viewBox="0 0 256 256"><path d="M240,102c0,70-103.79,126.66-108.21,129a8,8,0,0,1-7.58,0C119.79,228.66,16,172,16,102A62.07,62.07,0,0,1,78,40c20.65,0,38.73,8.88,50,23.89C139.27,48.88,157.35,40,178,40A62.07,62.07,0,0,1,240,102Z"></path></svg> <span>by Vivek Oza.</span>
             </div>
             <div className="flex justify-start md:text-xl text-base gap-4 mt-2">
               <a
-                href="www.linkedin.com/in/vivek-oza"
+                href="https://linkedin.com/in/vivek-oza"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 hover:underline"
