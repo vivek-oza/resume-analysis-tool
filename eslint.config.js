@@ -1,5 +1,16 @@
+import parser from "@typescript-eslint/parser";
+
 export const eslintConfig = {
-  parser: "@typescript-eslint/parser",
+  languageOptions: {
+    parser: parser,
+    parserOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+      ecmaFeatures: {
+        jsx: true,
+      },
+    },
+  },
   plugins: ["@typescript-eslint", "react", "react-hooks"],
   extends: [
     "eslint:recommended",
