@@ -1,5 +1,4 @@
 export const eslintConfig = {
-  root: true,
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "react", "react-hooks"],
   extends: [
