@@ -128,13 +128,13 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
-      <footer className="bg-[#C9EBFF] backdrop-blur-sm text-[#000A16] py-14 px-4 font-sans">
-        <div className="flex flex-col gap-14 font-schibsted-grotesk max-w-[1100px] mx-auto">
+      <footer className="bg-[#C9EBFF] backdrop-blur-sm text-[#000A16] md:py-14 py-7 px-3 font-sans">
+        <div className="flex flex-col md:gap-14 gap-7 font-schibsted-grotesk max-w-[1100px] mx-auto">
 
           <div className="font-medium md:text-4xl text-2xl flex flex-col space-y-2">
             <div className="">Resume analysis tool</div>
             <div className="">
-              
+
             </div>
           </div>
           <div>
